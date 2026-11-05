@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./myFunctions.js"></script>
+    <title>Cars & Booking</title>
+</head>
+<body>
+    <header>
+        <nav class="whiteSpacing d-flex justify-between align-center">
+            <h2>Car Rental Office</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Cars.html">Cars</a></li>
+            </ul>
+            <a class="blueButton" href="#bookingSection">Go to Booking</a>
+        </nav>
+    </header>
+
+    <main class="whiteSpacing" style="padding-top: 130px; padding-bottom: 80px;">
+        <h2 class="sectionHeader">Available Cars for Rent</h2>
+        <p class="sectionParagraph">Select one or more cars and click 'Continue' to complete your reservation request</p>
+
+        <div class="cardsContainer">
+            <!-- Item 1 -->
+            <div class="carCard">
+                <img src="./assets/imgs/car1.jpg" alt="Toyota Corolla" />
+                <h3>Toyota Corolla (2023)</h3>
+                <p class="price">250,000 SYP / day</p>
+                <p><strong>Code:</strong> CR-001</p>
+                <label style="display:block; margin-top:10px;">
+                    <input type="checkbox" name="carSelect" value="CR-001" data-title="Toyota Corolla" data-price="250000" /> Select this car
+                </label>
+                <div class="carDetailsToggle">Show / Hide Details</div>
+                <div class="extraDetails">
+                    <p><span class="property">Fuel Type:</span> Petrol</p>
+                    <p><span class="property">Transmission:</span> Automatic</p>
+                    <p><span class="property">Seats:</span> 5</p>
+                    <p><span class="property">Mileage:</span> 15,000 km</p>
+                    <p><span class="property">Color:</span> Red</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="carCard">
+                <img src="./assets/imgs/car2.webp" alt="Kia Sportage" />
+                <h3>Kia Sportage (2022)</h3>
+                <p class="price">400,000 SYP / day</p>
+                <p><strong>Code:</strong> CR-002</p>
+                <label style="display:block; margin-top:10px;">
+                    <input type="checkbox" name="carSelect" value="CR-002" data-title="Kia Sportage" data-price="400000" /> Select this car
+                </label>
+                <div class="carDetailsToggle">Show / Hide Details</div>
+                <div class="extraDetails">
+                    <p><span class="property">Fuel Type:</span> Petrol</p>
+                    <p><span class="property">Transmission:</span> Automatic</p>
+                    <p><span class="property">Seats:</span> 5</p>
+                    <p><span class="property">Mileage:</span> 30,000 km</p>
+                    <p><span class="property">Color:</span> gray</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="carCard">
+                <img src="./assets/imgs/car3.jpg" alt="Hyundai Elantra" />
+                <h3>Hyundai Elantra (2024)</h3>
+                <p class="price">300,000 SYP / day</p>
+                <p><strong>Code:</strong> CR-003</p>
+                <label style="display:block; margin-top:10px;">
+                    <input type="checkbox" name="carSelect" value="CR-003" data-title="Hyundai Elantra" data-price="300000" /> Select this car
+                </label>
+                <div class="carDetailsToggle">Show / Hide Details</div>
+                <div class="extraDetails">
+                    <p><span class="property">Fuel Type:</span> Petrol</p>
+                    <p><span class="property">Transmission:</span> Automatic</p>
+                    <p><span class="property">Seats:</span> 5</p>
+                    <p><span class="property">Mileage:</span> 5,000 km</p>
+                    <p><span class="property">Color:</span> gray</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="carCard">
+                <img src="./assets/imgs/car4.webp" alt="Chevrolet Spark" />
+                <h3>Chevrolet Spark (2021)</h3>
+                <p class="price">180,000 SYP / day</p>
+                <p><strong>Code:</strong> CR-004</p>
+                <label style="display:block; margin-top:10px;">
+                    <input type="checkbox" name="carSelect" value="CR-004" data-title="Chevrolet Spark" data-price="180000" /> Select this car
+                </label>
+                <div class="carDetailsToggle">Show / Hide Details</div>
+                <div class="extraDetails">
+                    <p><span class="property">Fuel Type:</span> Petrol</p>
+                    <p><span class="property">Transmission:</span> Manual</p>
+                    <p><span class="property">Seats:</span> 4</p>
+                    <p><span class="property">Mileage:</span> 45,000 km</p>
+                    <p><span class="property">Color:</span> Cyan</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="carCard">
+                <img src="./assets/imgs/car5.webp" alt="Nissan Sunny" />
+                <h3>Nissan Sunny (2023)</h3>
+                <p class="price">220,000 SYP / day</p>
+                <p><strong>Code:</strong> CR-005</p>
+                <label style="display:block; margin-top:10px;">
+                    <input type="checkbox" name="carSelect" value="CR-005" data-title="Nissan Sunny" data-price="220000" /> Select this car
+                </label>
+                <div class="carDetailsToggle">Show / Hide Details</div>
+                <div class="extraDetails">
+                    <p><span class="property">Fuel Type:</span> Petrol</p>
+                    <p><span class="property">Transmission:</span> Automatic</p>
+                    <p><span class="property">Seats:</span> 5</p>
+                    <p><span class="property">Mileage:</span> 20,000 km</p>
+                    <p><span class="property">Color:</span> Grey</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <button id="continueBtn" class="blueButton" type="button" style="font-size: 16px; padding: 15px 40px;">Continue to Booking</button>
+        </div>
+
+        <!-- Booking Form -->
+        <div id="bookingSection" class="bookingFormContainer" style="display:none;">
+            <form id="carBookingForm" action="#" method="post" onsubmit="return validateAndSubmitForm(event);">
+                <fieldset>
+                    <legend>Car Rental Form</legend>
+
+                    <div class="formGroup">
+                        <label for="fullName">Full Name (Arabic letters only):</label>
+                        <input type="text" id="fullName" name="fullName" />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="nationalId">National ID (11 digits, starting with 01 to 14) *:</label>
+                        <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="startDate">Rental Start Date (yyyy-mm-dd) *:</label>
+                        <input type="date" id="startDate" name="startDate" />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="endDate">Rental End Date (yyyy-mm-dd) *:</label>
+                        <input type="date" id="endDate" name="endDate" />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="mobileNumber">Mobile Number (Syriatel / MTN):</label>
+                        <input type="text" id="mobileNumber" name="mobileNumber" placeholder="e.g. 0933123456 or 0944123456" />
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="email" name="email" />
+                    </div>
+
+                    <button class="blueButton" type="submit" style="width: 100%; margin-top: 15px;">Submit Booking Request</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!-- Modal Dialog for Booking Summary & Calculations -->
+    <div id="resultModal" class="modal">
+        <div class="modalContent">
+            <span class="closeBtn" onclick="closeModal()">×</span>
+            <h2>Booking Summary & Cost</h2>
+            <hr style="margin: 15px 0;" />
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <footer class="whiteSpacing d-flex flex-column">
+        <div class="copyright d-flex justify-between">
+            <p>Copyright © 2026 Car Rental Office. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

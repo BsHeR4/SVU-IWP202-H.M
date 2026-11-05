@@ -1,0 +1,308 @@
+:root {
+    --primary-color: #EFF8FF;
+    --secondary-color: #025595;
+    --primary-font-color: #222222;
+    --secondary-font-color: #22222280;
+    --main-font: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, footer {
+    background-color: var(--primary-color);
+}
+
+.whiteSpacing {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.sectionHeader {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 100%;
+}
+
+.sectionParagraph {
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--secondary-font-color);
+}
+
+.blueButton {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    color: #F5F5F5;
+    border: none;
+    cursor: pointer;
+}
+
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+
+/* Navigation */
+nav {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: 500;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+/* Group Info */
+.groupInfo .container {
+    display: flex;
+    gap: 20px;      
+}
+
+.studentId {
+    color: var(--secondary-color);
+}
+
+.studentItem {
+    margin-left: 25px;
+    background-color: var();
+}
+
+.innerItem {
+    padding: 10px 10px 10px 0px;
+}
+
+.groupInfo .studentItem .horizintalBar {
+    background-color: var(--secondary-color);
+    width: 3px;
+    margin-right: 25px;
+}
+
+.sutdentProperty {
+    font-weight: 600;
+    font-size: 15px;
+    /* color: var(--secondary-color); */
+}
+
+.studentContainer {
+    display: flex;
+    border-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #22222211;
+}
+
+.groupInfo .container .item ul {
+    list-style: none;
+
+    li {
+        padding: 4px 0px;
+    }
+}
+
+.groupInfo .horizintalBar {
+    width: 5px;
+    border-radius: 2px;
+    background-color: var(--secondary-color);
+}
+
+/* Cards & Grid Styling */
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.carCard {
+    width: 31%;
+    border: 1.5px solid rgba(0,0,0,0.08);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    width: 48%;
+}
+
+.carCard ul {
+    list-style: none;
+    margin-top: 15px; 
+    line-height: 2;
+
+    li strong{
+        /* color: var(--secondary-color); */
+    }
+}
+
+.carCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.carCard h3 {
+    font-size: 20px;
+    color: var(--primary-font-color);
+    margin-bottom: 8px;
+}
+
+.carCard .price {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+}
+
+.carDetailsToggle {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #eef5fc;
+    color: var(--secondary-color);
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+.extraDetails {
+    display: none;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.extraDetails .property {
+    font-weight: bold;
+}
+
+/* Booking Form Styling */
+.bookingFormContainer {
+    margin-top: 50px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-font-color);
+}
+
+.formGroup input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Modal Popup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modalContent {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.closeBtn {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-top: 1px solid #eee;
+}
+
+footer .container {
+    padding-bottom: 30px;
+}
+
+footer .copyright {
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+    .whiteSpacing { padding-left: 20px; padding-right: 20px; }
+    .carCard { width: 100%; }
+    .modalContent { width: 90%; }
+    .cardsContainer {
+        flex-direction: column;
+    }
+    .carCard {
+        width: 100%;
+    }
+}
